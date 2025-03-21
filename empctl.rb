@@ -1,7 +1,7 @@
 class Empctl < Formula
     desc "A CLI tool from Emp Cloud"
     homepage "https://empyrealsdk.com"
-    version "1.0.0"
+    version "1.0.1"
 
     if OS.mac? && Hardware::CPU.intel?
       # macOS (Intel)
