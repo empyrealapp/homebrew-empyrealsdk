@@ -1,24 +1,24 @@
 class Empctl < Formula
     desc "A CLI tool from Emp Cloud"
     homepage "https://empyrealsdk.com"
-    version "1.0.4"
+    version "1.0.5"
 
     if OS.mac? && Hardware::CPU.intel?
       # macOS (Intel)
-      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.4-darwin-amd64.tar.gz"
-      sha256 "ee0fa8bf30dcb8577801fdb3f42989b776c20728e0aae2bd37cbd59eebf22f88"
+      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.5-darwin-amd64.tar.gz"
+      sha256 "a738c2ccb49eaee549c3eba22767bd5797476d9ac3bc9b7153fd32a77890b619"
     elsif OS.mac? && Hardware::CPU.arm?
       # macOS (Apple Silicon)
-      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.4-darwin-arm64.tar.gz"
-      sha256 "248f3839b87db6bbbafe727f45b3945cd91e23dbe77cacb457f0beb2ae82d697"
+      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.5-darwin-arm64.tar.gz"
+      sha256 "bd56c08caae391555c9da0ebe7ec6ea2926ee8a497f6a5634f4716b588f7ad7a"
     elsif OS.linux? && Hardware::CPU.intel?
       # Linux (Intel/AMD 64-bit)
-      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.4-linux-amd64.tar.gz"
-      sha256 "f77fe400bced628c2b66cd53f9542fa421875e5355092be5e8bcc505bda61f3d"
+      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.5-linux-amd64.tar.gz"
+      sha256 "973aff16ec82059eb0ea88c583b9a23c15a21aa0170d3ace71c50ad2edede722"
     elsif OS.linux? && Hardware::CPU.arm?
       # Linux (ARM 64, e.g. Graviton)
-      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.4-linux-arm64.tar.gz"
-      sha256 "a9e0eae8369e52b8f3a978d31001bb1ced3b9a1dc36b7ae601c9714fb567d23c"
+      url "https://empyrealsdk-binaries.s3.amazonaws.com/empctl-v1.0.5-linux-arm64.tar.gz"
+      sha256 "a705220082b700875cd3ccdad9713b759a2ef8fbb27444572f6fbee640247d2a"
     else
       odie "Binary not available for this platform."
     end
